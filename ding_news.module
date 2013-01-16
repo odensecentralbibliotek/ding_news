@@ -9,7 +9,7 @@
  */
 function ding_news_ding_library_menu_links() {
   return array(
-    'news' => array(
+    'news-category' => array(
       'title' => 'News',
     ),
   );
