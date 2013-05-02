@@ -50,8 +50,8 @@ function ding_news_field_group_info() {
     'label' => 'Categorization',
     'weight' => '3',
     'children' => array(
-      0 => 'field_ding_news_category',
-      1 => 'field_ding_news_tags',
+      0 => 'field_ding_news_tags',
+      1 => 'field_ding_news_category',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -133,8 +133,8 @@ function ding_news_field_group_info() {
     'label' => 'Images',
     'weight' => '1',
     'children' => array(
-      0 => 'field_ding_news_title_image',
-      1 => 'field_ding_news_list_image',
+      0 => 'field_ding_news_list_image',
+      1 => 'field_ding_news_title_image',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

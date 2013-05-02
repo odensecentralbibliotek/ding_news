@@ -14,7 +14,9 @@ function ding_news_user_default_permissions() {
   $permissions['create ding_news content'] = array(
     'name' => 'create ding_news content',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
+      'formidler' => 'formidler',
+      'redaktør' => 'redaktør',
     ),
     'module' => 'node',
   );
@@ -23,7 +25,8 @@ function ding_news_user_default_permissions() {
   $permissions['delete any ding_news content'] = array(
     'name' => 'delete any ding_news content',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
+      'redaktør' => 'redaktør',
     ),
     'module' => 'node',
   );
@@ -32,7 +35,9 @@ function ding_news_user_default_permissions() {
   $permissions['delete own ding_news content'] = array(
     'name' => 'delete own ding_news content',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
+      'formidler' => 'formidler',
+      'redaktør' => 'redaktør',
     ),
     'module' => 'node',
   );
@@ -41,7 +46,9 @@ function ding_news_user_default_permissions() {
   $permissions['edit any ding_news content'] = array(
     'name' => 'edit any ding_news content',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
+      'formidler' => 'formidler',
+      'redaktør' => 'redaktør',
     ),
     'module' => 'node',
   );
@@ -50,7 +57,9 @@ function ding_news_user_default_permissions() {
   $permissions['edit own ding_news content'] = array(
     'name' => 'edit own ding_news content',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
+      'formidler' => 'formidler',
+      'redaktør' => 'redaktør',
     ),
     'module' => 'node',
   );

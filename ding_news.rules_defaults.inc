@@ -29,7 +29,7 @@ function ding_news_default_rules_configuration() {
       "LABEL" : "Ding news node update",
       "PLUGIN" : "reaction rule",
       "TAGS" : [ "ding_news" ],
-      "REQUIRES" : [ "rules" ],
+      "REQUIRES" : [ "rules", "cache_actions" ],
       "ON" : [ "node_insert", "node_update", "node_delete" ],
       "IF" : [
         { "node_is_of_type" : {
@@ -38,7 +38,17 @@ function ding_news_default_rules_configuration() {
           }
         }
       ],
-      "DO" : []
+      "DO" : [
+        { "cache_actions_action_clear_panels_pane_cache" : { "panes" : { "value" : {
+                "50e6e786e39a2" : "50e6e786e39a2",
+                "50e6dea3bc762" : "50e6dea3bc762",
+                "50bf11a50b20f" : "50bf11a50b20f",
+                "50e6e9016bd4e" : "50e6e9016bd4e"
+              }
+            }
+          }
+        }
+      ]
     }
   }');
   return $items;
