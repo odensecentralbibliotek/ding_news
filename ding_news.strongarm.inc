@@ -152,6 +152,13 @@ function ding_news_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'opening_hours_enabled_ding_news';
+  $strongarm->value = 0;
+  $export['opening_hours_enabled_ding_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_ding_news_da_pattern';
   $strongarm->value = 'nyheder/[node:title]';
   $export['pathauto_node_ding_news_da_pattern'] = $strongarm;
@@ -183,6 +190,76 @@ function ding_news_strongarm() {
   $strongarm->name = 'pathauto_taxonomy_term_ding_news_pattern';
   $strongarm->value = 'news/category/[term:name]';
   $export['pathauto_taxonomy_term_ding_news_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'print_display_comment_ding_news';
+  $strongarm->value = 0;
+  $export['print_display_comment_ding_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'print_display_ding_news';
+  $strongarm->value = 1;
+  $export['print_display_ding_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'print_display_urllist_ding_news';
+  $strongarm->value = 1;
+  $export['print_display_urllist_ding_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_enable_ding_news';
+  $strongarm->value = 1;
+  $export['scheduler_publish_enable_ding_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_required_ding_news';
+  $strongarm->value = 0;
+  $export['scheduler_publish_required_ding_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_revision_ding_news';
+  $strongarm->value = 0;
+  $export['scheduler_publish_revision_ding_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_touch_ding_news';
+  $strongarm->value = 0;
+  $export['scheduler_publish_touch_ding_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_enable_ding_news';
+  $strongarm->value = 1;
+  $export['scheduler_unpublish_enable_ding_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_required_ding_news';
+  $strongarm->value = 0;
+  $export['scheduler_unpublish_required_ding_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_revision_ding_news';
+  $strongarm->value = 0;
+  $export['scheduler_unpublish_revision_ding_news'] = $strongarm;
 
   return $export;
 }
