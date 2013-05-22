@@ -315,7 +315,7 @@ function ding_news_default_page_manager_handlers() {
     'panels_breadcrumbs_home' => 1,
   );
   $display = new panels_display();
-  $display->layout = 'full_13_3_stacked';
+  $display->layout = 'two_12_4';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -339,7 +339,7 @@ function ding_news_default_page_manager_handlers() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-5';
-    $pane->panel = 'grid_13_left';
+    $pane->panel = 'grid_12_left';
     $pane->type = 'node_content';
     $pane->subtype = 'node_content';
     $pane->shown = TRUE;
@@ -368,10 +368,10 @@ function ding_news_default_page_manager_handlers() {
     $pane->position = 0;
     $pane->locks = '';
     $display->content['new-5'] = $pane;
-    $display->panels['grid_13_left'][0] = 'new-5';
+    $display->panels['grid_12_left'][0] = 'new-5';
     $pane = new stdClass();
     $pane->pid = 'new-6';
-    $pane->panel = 'grid_13_left';
+    $pane->panel = 'grid_12_left';
     $pane->type = 'block';
     $pane->subtype = 'addthis-addthis_block';
     $pane->shown = TRUE;
@@ -389,10 +389,10 @@ function ding_news_default_page_manager_handlers() {
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-6'] = $pane;
-    $display->panels['grid_13_left'][1] = 'new-6';
+    $display->panels['grid_12_left'][1] = 'new-6';
     $pane = new stdClass();
     $pane->pid = 'new-7';
-    $pane->panel = 'grid_3_right';
+    $pane->panel = 'grid_4_right';
     $pane->type = 'block';
     $pane->subtype = 'similarterms-ding_content_tags';
     $pane->shown = TRUE;
@@ -411,10 +411,10 @@ function ding_news_default_page_manager_handlers() {
     $pane->position = 0;
     $pane->locks = '';
     $display->content['new-7'] = $pane;
-    $display->panels['grid_3_right'][0] = 'new-7';
+    $display->panels['grid_4_right'][0] = 'new-7';
     $pane = new stdClass();
     $pane->pid = 'new-8';
-    $pane->panel = 'grid_3_right';
+    $pane->panel = 'grid_4_right';
     $pane->type = 'campaign';
     $pane->subtype = 'campaign';
     $pane->shown = TRUE;
@@ -451,10 +451,10 @@ function ding_news_default_page_manager_handlers() {
     $pane->position = 1;
     $pane->locks = '';
     $display->content['new-8'] = $pane;
-    $display->panels['grid_3_right'][1] = 'new-8';
+    $display->panels['grid_4_right'][1] = 'new-8';
     $pane = new stdClass();
     $pane->pid = 'new-9';
-    $pane->panel = 'grid_3_right';
+    $pane->panel = 'grid_4_right';
     $pane->type = 'news_category_menu';
     $pane->subtype = 'news_category_menu';
     $pane->shown = FALSE;
@@ -476,10 +476,10 @@ function ding_news_default_page_manager_handlers() {
     $pane->position = 2;
     $pane->locks = array();
     $display->content['new-9'] = $pane;
-    $display->panels['grid_3_right'][2] = 'new-9';
+    $display->panels['grid_4_right'][2] = 'new-9';
     $pane = new stdClass();
     $pane->pid = 'new-10';
-    $pane->panel = 'grid_3_right';
+    $pane->panel = 'grid_4_right';
     $pane->type = 'menu_tree';
     $pane->subtype = 'menu-news-category-menu-block';
     $pane->shown = TRUE;
@@ -507,7 +507,7 @@ function ding_news_default_page_manager_handlers() {
     $pane->position = 3;
     $pane->locks = array();
     $display->content['new-10'] = $pane;
-    $display->panels['grid_3_right'][3] = 'new-10';
+    $display->panels['grid_4_right'][3] = 'new-10';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-9';
   $handler->conf['display'] = $display;
