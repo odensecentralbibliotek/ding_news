@@ -17,7 +17,7 @@ function ding_news_default_page_manager_handlers() {
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = -27;
+  $handler->weight = -29;
   $handler->conf = array(
     'title' => 'News story',
     'no_blocks' => 0,
@@ -554,7 +554,7 @@ taxonomy/term/%term:tid',
     'panels_breadcrumbs_home' => 1,
   );
   $display = new panels_display();
-  $display->layout = 'threecol_25_50_25';
+  $display->layout = 'three_4_8_4';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -570,7 +570,7 @@ taxonomy/term/%term:tid',
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-11';
-    $pane->panel = 'left';
+    $pane->panel = 'grid_4_left';
     $pane->type = 'news_category_menu';
     $pane->subtype = 'news_category_menu';
     $pane->shown = FALSE;
@@ -592,10 +592,10 @@ taxonomy/term/%term:tid',
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-11'] = $pane;
-    $display->panels['left'][0] = 'new-11';
+    $display->panels['grid_4_left'][0] = 'new-11';
     $pane = new stdClass();
     $pane->pid = 'new-12';
-    $pane->panel = 'left';
+    $pane->panel = 'grid_4_left';
     $pane->type = 'menu_tree';
     $pane->subtype = 'menu-news-category-menu-block';
     $pane->shown = TRUE;
@@ -623,86 +623,10 @@ taxonomy/term/%term:tid',
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-12'] = $pane;
-    $display->panels['left'][1] = 'new-12';
+    $display->panels['grid_4_left'][1] = 'new-12';
     $pane = new stdClass();
     $pane->pid = 'new-13';
-    $pane->panel = 'middle';
-    $pane->type = 'menu_title';
-    $pane->subtype = 'menu_title';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-13'] = $pane;
-    $display->panels['middle'][0] = 'new-13';
-    $pane = new stdClass();
-    $pane->pid = 'new-14';
-    $pane->panel = 'middle';
-    $pane->type = 'library_list';
-    $pane->subtype = 'library_list';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'type' => 'news-category',
-      'context' => array(
-        0 => 'argument_term_1',
-        1 => 'empty',
-      ),
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-14'] = $pane;
-    $display->panels['middle'][1] = 'new-14';
-    $pane = new stdClass();
-    $pane->pid = 'new-15';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ding_news-panel_pane_3';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array(
-      'method' => 'rules',
-      'settings' => array(
-        'granularity' => 'args',
-        'language' => 1,
-        'language_content' => 1,
-        'advanced' => array(),
-        'cache_key' => '50e6e786e39a2',
-        'substitute' => 0,
-        'new' => TRUE,
-      ),
-    );
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-15'] = $pane;
-    $display->panels['middle'][2] = 'new-15';
-    $pane = new stdClass();
-    $pane->pid = 'new-16';
-    $pane->panel = 'right';
+    $pane->panel = 'grid_4_right';
     $pane->type = 'block';
     $pane->subtype = 'finurlig_widget-fffWidget';
     $pane->shown = TRUE;
@@ -720,11 +644,11 @@ taxonomy/term/%term:tid',
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-16'] = $pane;
-    $display->panels['right'][0] = 'new-16';
+    $display->content['new-13'] = $pane;
+    $display->panels['grid_4_right'][0] = 'new-13';
     $pane = new stdClass();
-    $pane->pid = 'new-17';
-    $pane->panel = 'right';
+    $pane->pid = 'new-14';
+    $pane->panel = 'grid_4_right';
     $pane->type = 'campaign';
     $pane->subtype = 'campaign';
     $pane->shown = TRUE;
@@ -761,8 +685,84 @@ taxonomy/term/%term:tid',
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
+    $display->content['new-14'] = $pane;
+    $display->panels['grid_4_right'][1] = 'new-14';
+    $pane = new stdClass();
+    $pane->pid = 'new-15';
+    $pane->panel = 'grid_8_left';
+    $pane->type = 'menu_title';
+    $pane->subtype = 'menu_title';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-15'] = $pane;
+    $display->panels['grid_8_left'][0] = 'new-15';
+    $pane = new stdClass();
+    $pane->pid = 'new-16';
+    $pane->panel = 'grid_8_left';
+    $pane->type = 'library_list';
+    $pane->subtype = 'library_list';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'type' => 'news-category',
+      'context' => array(
+        0 => 'argument_term_1',
+        1 => 'empty',
+      ),
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-16'] = $pane;
+    $display->panels['grid_8_left'][1] = 'new-16';
+    $pane = new stdClass();
+    $pane->pid = 'new-17';
+    $pane->panel = 'grid_8_left';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ding_news-panel_pane_3';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array(
+      'method' => 'rules',
+      'settings' => array(
+        'granularity' => 'args',
+        'language' => 1,
+        'language_content' => 1,
+        'advanced' => array(),
+        'cache_key' => '50e6e786e39a2',
+        'substitute' => 0,
+        'new' => TRUE,
+      ),
+    );
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
     $display->content['new-17'] = $pane;
-    $display->panels['right'][1] = 'new-17';
+    $display->panels['grid_8_left'][2] = 'new-17';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
