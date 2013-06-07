@@ -227,15 +227,14 @@ function ding_news_views_default_views() {
   $handler->display->display_options['fields']['field_ding_news_list_image']['field'] = 'field_ding_news_list_image';
   $handler->display->display_options['fields']['field_ding_news_list_image']['ui_name'] = 'Image (list image)';
   $handler->display->display_options['fields']['field_ding_news_list_image']['label'] = '';
-  $handler->display->display_options['fields']['field_ding_news_list_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_class'] = 'image-container';
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ding_news_list_image']['settings'] = array(
-    'image_style' => 'ding_content_main_image',
-    'image_link' => '',
+    'image_style' => 'thumbnail',
+    'image_link' => 'content',
   );
   /* Field: Lead (content) */
   $handler->display->display_options['fields']['field_ding_news_lead']['id'] = 'field_ding_news_lead';
@@ -333,7 +332,6 @@ function ding_news_views_default_views() {
   $handler->display->display_options['fields']['field_ding_news_list_image']['field'] = 'field_ding_news_list_image';
   $handler->display->display_options['fields']['field_ding_news_list_image']['ui_name'] = 'Image (list image)';
   $handler->display->display_options['fields']['field_ding_news_list_image']['label'] = '';
-  $handler->display->display_options['fields']['field_ding_news_list_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_class'] = 'image-container';
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_label_colon'] = FALSE;
@@ -468,7 +466,6 @@ function ding_news_views_default_views() {
   $handler->display->display_options['fields']['field_ding_news_list_image']['field'] = 'field_ding_news_list_image';
   $handler->display->display_options['fields']['field_ding_news_list_image']['ui_name'] = 'Image (list image)';
   $handler->display->display_options['fields']['field_ding_news_list_image']['label'] = '';
-  $handler->display->display_options['fields']['field_ding_news_list_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_class'] = 'image-container';
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_label_colon'] = FALSE;
@@ -827,7 +824,6 @@ function ding_news_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Floated news list', 'panel_pane_3');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'floated';
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
@@ -896,15 +892,14 @@ function ding_news_views_default_views() {
   $handler->display->display_options['fields']['field_ding_news_list_image']['field'] = 'field_ding_news_list_image';
   $handler->display->display_options['fields']['field_ding_news_list_image']['ui_name'] = 'Image (list image)';
   $handler->display->display_options['fields']['field_ding_news_list_image']['label'] = '';
-  $handler->display->display_options['fields']['field_ding_news_list_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_class'] = 'image-container';
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ding_news_list_image']['settings'] = array(
-    'image_style' => 'ding_content_main_image',
-    'image_link' => '',
+    'image_style' => 'thumbnail',
+    'image_link' => 'content',
   );
   /* Field: Lead (content) */
   $handler->display->display_options['fields']['field_ding_news_lead']['id'] = 'field_ding_news_lead';
@@ -1060,7 +1055,6 @@ function ding_news_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Nyheder';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'floated';
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['link_url'] = 'node/!1/news-category';
@@ -1126,15 +1120,14 @@ function ding_news_views_default_views() {
   $handler->display->display_options['fields']['field_ding_news_list_image']['field'] = 'field_ding_news_list_image';
   $handler->display->display_options['fields']['field_ding_news_list_image']['ui_name'] = 'Image (list image)';
   $handler->display->display_options['fields']['field_ding_news_list_image']['label'] = '';
-  $handler->display->display_options['fields']['field_ding_news_list_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_class'] = 'image-container';
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ding_news_list_image']['settings'] = array(
-    'image_style' => 'ding_content_main_image',
-    'image_link' => '',
+    'image_style' => 'thumbnail',
+    'image_link' => 'content',
   );
   /* Field: Lead (content) */
   $handler->display->display_options['fields']['field_ding_news_lead']['id'] = 'field_ding_news_lead';
@@ -1223,7 +1216,6 @@ function ding_news_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'News not attached a specific library';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'floated';
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['link_url'] = 'news-category/all';
@@ -1289,15 +1281,14 @@ function ding_news_views_default_views() {
   $handler->display->display_options['fields']['field_ding_news_list_image']['field'] = 'field_ding_news_list_image';
   $handler->display->display_options['fields']['field_ding_news_list_image']['ui_name'] = 'Image (list image)';
   $handler->display->display_options['fields']['field_ding_news_list_image']['label'] = '';
-  $handler->display->display_options['fields']['field_ding_news_list_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_class'] = 'image-container';
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_ding_news_list_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ding_news_list_image']['settings'] = array(
-    'image_style' => 'ding_content_main_image',
-    'image_link' => '',
+    'image_style' => 'thumbnail',
+    'image_link' => 'content',
   );
   /* Field: Lead (content) */
   $handler->display->display_options['fields']['field_ding_news_lead']['id'] = 'field_ding_news_lead';
